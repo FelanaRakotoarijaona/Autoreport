@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
+        <br>
+        <div><img src="images/Logo_bewys.png" alt="logo" style="width: 90%;"/></div>
+        <br>
+        <button class="w3-bar-item w3-button w3-hide-large"
+        onclick="w3_close()">Close &times;</button>
+        <button class="w3-block w3-teal">
+            <a href="/accueilhtp" class="w3-bar-item w3-button">HTP</a>
+        </button>
+            <a href="/accueilRetour" class="w3-bar-item w3-button">RETOUR</a>
+        
+        <a href="/accueilContetieux" class="w3-bar-item w3-button">CONTENTIEUX</a>
+       
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">INOVCOM</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="/accueilInovcom" class="w3-bar-item w3-button">Inovcom Autre</a>
+              <a href="/accueilInovcomtype2" class="w3-bar-item w3-button">Nombre de ligne</a>
+              <a href="/accueilInovcomtype3" class="w3-bar-item w3-button">Nombre non vide</a>
+              <a href="/accueilInovcomtype4" class="w3-bar-item w3-button">Nombre OK/KO</a>
+              <a href="/accueilInovcomtype5" class="w3-bar-item w3-button">Retour FAV</a>
+              <a href="/accueilInovcomtype6" class="w3-bar-item w3-button">Inovcom CMUC</a>
+              <a href="/accueilInovcomtype7" class="w3-bar-item w3-button">Demat quotidien</a>
+              <a href="/accueilInovcomtype8" class="w3-bar-item w3-button">Avis d'annulation</a>
+              <a href="/accueilInovcomtype9" class="w3-bar-item w3-button">Facture Intériale</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">INDU</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="/accueilIndu" class="w3-bar-item w3-button">Indu Autre</a>
+              <a href="/accueilIndu2" class="w3-bar-item w3-button">Relevé de compte</a>
+            </div>
+        </div>
+        <a href="/logout" class="w3-bar-item w3-button">Se déconnecter</a>
+     </div>
+      
+    <div class="w3-main" style="margin-left:200px">
+      
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                  <h1>REPORTING ALMERYS</h1>
+                  <!-- <ul style="display:inline; ">
+                      <li><button class="w3-block w3-teal">
+                        <a style="text-decoration: none;" href="/accueilengagement" class="w3-bar-item w3-button">GARANTIE</a>
+                      </button></li>
+                      <li><button class="w3-block w3-teal">
+                        <a style="text-decoration: none;" href="/accueilengagement" class="w3-bar-item w3-button">HTP ENGAGEMENT</a>
+                      </button></li>  
+                  </ul> -->
+
+            </div>
+        </div>
+    </div>
+    </body>
+      <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      </script>
+
+</html>
